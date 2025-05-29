@@ -8,6 +8,8 @@ material = "1.10.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 room = "2.7.1"  # 统一 Room 版本
+mpandroidchart = "3.1.0"
+calendarview = "1.4.3"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -19,6 +21,9 @@ activity = { group = "androidx.activity", name = "activity", version.ref = "acti
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+# 在 [libraries] 中添加：
+mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", version.ref = "mpandroidchart" }
+calendarview = { group = "com.prolificinteractive", name = "material-calendarview", version.ref = "calendarview" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -47,6 +47,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
-    implementation("com.prolificinteractive:material-calendarview:1.4.3")
+    // 图表库
+    implementation(libs.mpandroidchart)
+
+    // 日历控件，排除 support 库
+    implementation(libs.calendarview) {
+        exclude(group = "com.android.support")
+    }
 }
